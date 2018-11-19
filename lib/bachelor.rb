@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
     if k1.to_s == season 
       v1.each do |element|
         if element[:status] == "Winner"
-            return element[:name]
+            x+=element[:name]
         end
       end
     end 
