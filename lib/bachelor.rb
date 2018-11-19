@@ -1,13 +1,13 @@
 def get_first_name_of_season_winner(data, season)
   data.each do |k1,v1|
-    if k1 == season
+    if k1.to_s == season 
       v1.each do |element|
-        if data[k1][element]["status"] == "Winner"
-          return data[k1][element]["name"]
+        puts element
+        if element[:status] == "Winner"
+          return element[:name]
         end
-          
-      end 
-    end
+      end
+    end 
   end
 end
 
