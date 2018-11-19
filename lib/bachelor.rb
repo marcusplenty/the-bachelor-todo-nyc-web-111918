@@ -38,8 +38,8 @@ end
 def get_occupation(data, hometown)
   data.each do |k1,v1|
       v1.find do |element|
-        if element["occupation"] == occupation
-           return element["name"]
+        if element["hometown"] == hometown
+           return element["occupation"]
         end
       end
   end
