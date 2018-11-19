@@ -1,12 +1,11 @@
 def get_first_name_of_season_winner(data, season)
   data.each do |k1,v1|
     if k1.to_s == season 
-       v1.each do |element|
+      v1.each do |element|
         if element[:status] == "Winner"
           x = element[:name]
           x1 = x.split(" ")
           return x1[0]
-          
         end
       end
     end 
