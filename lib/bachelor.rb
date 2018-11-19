@@ -1,17 +1,15 @@
 def get_first_name_of_season_winner(data, season)
-  @y = ""
   data.each do |k1,v1|
     if k1.to_s == season 
       v1.each do |element|
         if element[:status] == "Winner"
           x = element[:name]
           x1 = x.split(" ")
-          @y = x1[0]
+          return x1[0]
         end
       end
     end 
   end
-  return @y
 end
 
 def get_contestant_name(data, occupation)
