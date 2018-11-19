@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
       v1.each do |element|
         puts element
         if element[:status] == "Winner"
-          x = element[:name]
+            return element[:name]
         end
       end
     end 
