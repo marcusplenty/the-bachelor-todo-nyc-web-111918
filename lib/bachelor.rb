@@ -4,11 +4,12 @@ def get_first_name_of_season_winner(data, season)
       v1.each do |element|
         puts element
         if element[:status] == "Winner"
-          return element[:name]
+          x = element[:name]
         end
       end
     end 
   end
+  return x
 end
 
 def get_contestant_name(data, occupation)
