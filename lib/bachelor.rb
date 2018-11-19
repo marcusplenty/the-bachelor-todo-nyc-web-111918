@@ -1,4 +1,5 @@
 def get_first_name_of_season_winner(data, season)
+  x = ""
   data.each do |k1,v1|
     if k1.to_s == season 
       v1.each do |element|
@@ -8,6 +9,7 @@ def get_first_name_of_season_winner(data, season)
       end
     end 
   end
+  return x
 end
 
 def get_contestant_name(data, occupation)
