@@ -27,7 +27,7 @@ def count_contestants_by_hometown(data, hometown)
   counter = 0
   data.each do |k1,v1|
       v1.each do |element|
-        if data[v1][element][:hometown] == hometown
+        if data[k1][element][:hometown] == hometown
           counter+=1
         end
       end
