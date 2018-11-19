@@ -16,8 +16,8 @@ def get_contestant_name(data, occupation)
   x = ""
   data.each do |k1,v1|
       v1.each do |element|
-        if element[:occupation] == occupation
-           return element[:name]
+        if element["occupation"] == occupation
+           return element["name"]
         end
       end
   end
