@@ -52,8 +52,9 @@ def get_average_age_for_season(data, season)
     if k1.to_s == season 
       v1.each do |element|
         counter += 1
-        sum += element["age"]
+        sum += element["age"].to_i
       end
     end 
   end
+  return sum/counter
 end
